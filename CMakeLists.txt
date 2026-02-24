@@ -3,7 +3,7 @@
 cmake_minimum_required(VERSION 3.21)
 
 # Set your project name. This will be the name of your SKSE .dll file.
-project(TemplatePlugin VERSION 0.0.1 LANGUAGES CXX)
+project(SoundFXPanel VERSION 1.0.0 LANGUAGES CXX)
 
 #
 
@@ -47,6 +47,7 @@ target_include_directories(
 	"${PROJECT_NAME}"
 	PRIVATE
 		${SIMPLEINI_INCLUDE_DIRS}
+		${CMAKE_SOURCE_DIR}/include
 )
 # When your SKSE .dll is compiled, this will automatically copy the .dll into your mods folder.
 # Only works if you configure DEPLOY_ROOT above (or set the SKYRIM_MODS_FOLDER environment variable)
